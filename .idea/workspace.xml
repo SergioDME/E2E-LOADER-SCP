@@ -4,9 +4,150 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="99c053a2-e4df-4bdb-9762-8c0064b10a16" name="Changes" comment="addition of other har files and odp">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="99c053a2-e4df-4bdb-9762-8c0064b10a16" name="Changes" comment="moved scp branch to the new public repository">
+      <change afterPath="$PROJECT_DIR$/dependency-reduced-pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/gui tests/create_and_delete_room.cy.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/gui tests/hars/create_and_delete_room.har" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/schema_generator/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/schema_generator/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/schema_generator/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/schema_generator/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/schema_generator/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/schema_generator/.idea/runConfigurations/bin_www.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/schema_generator/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/schema_generator/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/schema_generator/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/schema_generator/bin/www" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/schema_generator/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/schema_generator/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/schema_generator/public/stylesheets/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/schema_generator/routes/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/schema_generator/routes/schema.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/schema_generator/routes/users.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/schema_generator/services/schema-services.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/schema_generator/views/error.pug" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/schema_generator/views/index.pug" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/schema_generator/views/layout.pug" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/screens/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/screens/11a.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/screens/11b.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/screens/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/screens/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/screens/4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/screens/5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/screens/6a.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/screens/6b.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/screens/7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/screens/8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/screens/9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/data/csv/booking-dates.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/data/csv/city.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/data/dependencies_saved/create_new_room-sergio.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/data/dependencies_saved/guest_book_reservation-sergio.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/data/odp/create_and_delete_room.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/data/scripts_saved/SearchHotel-csv2.jmx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/data/scripts_saved/create_new_room-sergio.jmx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/data/scripts_saved/create_new_room.jmx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/data/scripts_saved/guest_book_reservation-sergio.jmx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/data/scripts_saved/guest_book_reservation.jmx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Entity/CSVNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Entity/Cache.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Entity/CheckableItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Entity/Content.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Entity/Cookie.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Entity/Creator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Entity/DependencyGraph.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Entity/Edge.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Entity/EdgeBodyJSON.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Entity/EdgeBodyUE.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Entity/EdgeCookie.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Entity/EdgeHeader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Entity/EdgeQueryParam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Entity/EdgeUrl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Entity/Entry.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Entity/Har.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Entity/Header.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Entity/Log.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Entity/MyNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Entity/Param.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Entity/PostData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Entity/QueryParam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Entity/Request.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Entity/Response.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Entity/Timing.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Entity/UltimateThreadGroup.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Entity/WebSocketMessage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Properties/Paths.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Services/CorrelationsView/CorrelationFrameService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Services/CorrelationsView/ScriptGeneration/Converter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Services/CorrelationsView/ScriptGeneration/JMeterAdaption.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Services/CorrelationsView/ScriptGeneration/JMeterLoadCreator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Services/CorrelationsView/ScriptGeneration/ScriptMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Services/CustomizeCorrelationView/ButtonsAction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Services/CustomizeCorrelationView/CSV/CSVFrameService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Services/CustomizeCorrelationView/CorrelatorHelperService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Services/CustomizeCorrelationView/CustomCorrelationFrameService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Services/CustomizeCorrelationView/JTableAction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Services/CustomizeCorrelationView/PanelMessage/PanelMessageInfoService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Services/Dependencies/AtomicDependencyValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Services/Dependencies/BodyDependency.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Services/Dependencies/CookieDependency.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Services/Dependencies/EdgeAdapterFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Services/Dependencies/ExtractDependencies.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Services/Dependencies/HeaderDependency.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Services/Dependencies/LCS.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Services/Dependencies/LevenshteinDistance.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Services/Dependencies/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Services/Dependencies/QueryParameterDependency.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Services/Dependencies/TypeEdgeAdaptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Services/Dependencies/TypeFromNodeAdaptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Services/Dependencies/UrlDependency.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Services/HomeView/E2eTableService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Services/HomeView/E2eTestTableModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Services/HomeView/HomeServices.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Services/HomeView/WorkloadGraph/ChartWorkload.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Services/HomeView/WorkloadGraph/MyPoint.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Services/HomeView/WorkloadTableModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Services/HomeView/WorkloadTableService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Services/ResponseAnalyzer/AtomicObject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Services/ResponseAnalyzer/JsonSchemaGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Services/ResponseAnalyzer/ResponseAnalyzer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Services/ResponseAnalyzer/ResponseUnstructured.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Services/ResponseAnalyzer/StructuredObject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Services/Utils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/View/AddManuallyCorrelationPage/AddManuallyCorrelationFrame.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/View/AddManuallyCorrelationPage/AddManuallyCorrelationFrame.jfd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/View/AddManuallyCorrelationPage/CustomCorrelationTableModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/View/AddManuallyCorrelationPage/UsePreviouseResponseModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/View/CSV/CSVFrame.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/View/CSV/CSVFrame.jfd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/View/CorrelationsPage/CorrelationFrame.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/View/CorrelationsPage/CorrelationFrame.jfd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/View/CorrelationsPage/CorrelationTableModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/View/CorrelationsPage/ScriptsTableModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/View/CustomizeCorrelationPage/CustomizeCorrelationPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/View/CustomizeCorrelationPage/PanelMessage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/View/CustomizeCorrelationPage/PanelMessage.jfd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/View/CustomizeCorrelationPage/ReplacementTableModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/View/CustomizeCorrelationPage/TableComponent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/View/CustomizeCorrelationPage/TableComponent.jfd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/View/Home.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/View/Home.jfd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/arc-theme-orange.theme.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/img/add-25.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/img/back-25.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/img/delete-30.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/img/filter-25.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/img/folder-25.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/img/forward-25.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/img/info-25.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/img/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/img/search-25.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/AppTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,10 +187,20 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
 }</component>
   <component name="ProjectId" id="2f08eHaVTZ6qV4fzJeXszZGh0YF" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -65,10 +216,10 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Global Libraries",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.37958115",
-    "settings.editor.selected.configurable": "editor.preferences.fonts.default",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "project.propCompiler",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -77,11 +228,11 @@
       <recent name="Entity" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\sergi\IdeaProjects\E2E-LOADER-SCP" />
       <recent name="$PROJECT_DIR$/example/gui tests/hars" />
       <recent name="$PROJECT_DIR$/example/gui tests" />
       <recent name="$PROJECT_DIR$/src/main/resources" />
       <recent name="$PROJECT_DIR$/src/data/themes" />
-      <recent name="$PROJECT_DIR$/src/main/java/View/CSV" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/resources" />
@@ -127,8 +278,10 @@
       </method>
     </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="18" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="e2eloader-dependency-graph" />
+      <module name="E2E-LOADER-SCP" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -159,6 +312,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.Converter" />
+      <item itemvalue="Application.ExtractDependencies" />
+      <item itemvalue="Application.Main" />
+      <item itemvalue="Application.ScriptMain" />
+      <item itemvalue="Application.Services.Dependencies.Main" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
@@ -372,7 +532,14 @@
       <option name="project" value="LOCAL" />
       <updated>1755530926098</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="first commit">
+      <created>1755596644807</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1755596644807</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -397,7 +564,9 @@
     <MESSAGE value="cambiamenti nel pom per la generazione del file jar corretto." />
     <MESSAGE value="delete sensitive files" />
     <MESSAGE value="moving icon from src to resources and fixing related code; addition of a messagedialog when the app is closed." />
-    <option name="LAST_COMMIT_MESSAGE" value="moving icon from src to resources and fixing related code; addition of a messagedialog when the app is closed." />
+    <MESSAGE value="first commit" />
+    <MESSAGE value="moved scp branch to the new public repository" />
+    <option name="LAST_COMMIT_MESSAGE" value="moved scp branch to the new public repository" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
