@@ -22,7 +22,7 @@ public class E2eTableService {    public static void setActionE2ETable(JTable ta
             int dotIndex = filename.indexOf('.');
             filename = (dotIndex == -1) ? filename: filename.substring(0, dotIndex);
 
-            String path = home.getPathJField().getText();
+            String path = home.getPath();
             String harpath = path+"/hars";
             String harfilename = filename+".har";
             if(col==2 && !(((E2eTestTableModel)home.getE2eTestCases().getModel()).getFilenameCheck().get(row))) { //not checked

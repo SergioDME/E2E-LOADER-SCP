@@ -3,9 +3,12 @@
  */
 
 package View;
+import Services.HomeView.E2eTestTableModel;
 
 import javax.swing.*;
 import java.awt.*;
+import java.io.File;
+import java.util.ArrayList;
 
 /**
  * @author unknown
@@ -48,13 +51,42 @@ public class Home extends JFrame {
                 panel2.setLayout(new BorderLayout(5, 5));
 
                 //---- pathJLabel ----
-                pathJLabel.setText("text");
-                panel2.add(pathJLabel, BorderLayout.WEST);
-                panel2.add(pathJField, BorderLayout.CENTER);
+                pathJLabel.setText("Select End-to-End Test Folder..");
+                panel2.add(pathJLabel, BorderLayout.CENTER);
+                //panel2.add(pathJField, BorderLayout.CENTER);
 
                 //---- pathJButton ----
-                pathJButton.setText("text");
-                panel2.add(pathJButton, BorderLayout.EAST);
+                pathJButton.setText("Browse");
+                pathJButton.setPreferredSize(new Dimension(30, 30));
+                panel2.add(pathJButton, BorderLayout.WEST);
+                pathJButton.addActionListener(e->{
+                    JFileChooser chooser = new JFileChooser();
+                    chooser.setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY);
+                    chooser.setDialogTitle("Select Folder");
+
+                    if (chooser.showOpenDialog(panel2) == JFileChooser.APPROVE_OPTION) {
+                        File selectedPath = chooser.getSelectedFile();
+
+                        JOptionPane.showMessageDialog(
+                                panel2,
+                                "Selected path:\n" + selectedPath.getAbsolutePath()
+                        );
+
+                        String path = selectedPath.getAbsolutePath();
+                        this.setPath(path);
+                        ArrayList<String> results =  new ArrayList<>();
+                        File[] files = new File(path).listFiles();
+                        for(File file : files) {
+                            if(file.isFile()) {
+                                results.add(file.getName());
+                            }
+                        }
+                        E2eTestTableModel e2eTestTableModel = new E2eTestTableModel(results);
+                        this.getE2eTestCases().setModel(e2eTestTableModel);
+                        this.getE2eTestCases().getColumnModel().getColumn(0).setMaxWidth(30);
+                        this.getE2eTestCases().getColumnModel().getColumn(2).setMaxWidth(30);
+                    }
+                });
             }
             panel1.add(panel2, BorderLayout.PAGE_START);
 
@@ -154,6 +186,10 @@ public class Home extends JFrame {
     private JPanel CHART;
     // JFormDesigner - End of variables declaration  //GEN-END:variables
 
+    private String path;
+
+    public void setPath(String p) {this.path=p;}
+    public String getPath(){return this.path;}
 
     public JPanel getCHART() {
         return CHART;

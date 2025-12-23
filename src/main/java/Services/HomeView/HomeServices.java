@@ -22,7 +22,7 @@ public class HomeServices {
         return new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
-                String path = home.getPathJField().getText();
+                String path = home.getPath();
                 ArrayList<String> results =  new ArrayList<>();
                 File[] files = new File(path).listFiles();
                 for(File file : files) {

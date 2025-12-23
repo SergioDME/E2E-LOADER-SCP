@@ -97,12 +97,13 @@ public class Main {
                 }
                 home.setTitle("E2E-LOADER");
                 ImageIcon folderIcon = new ImageIcon(getClass().getResource("/img/folder-25.png"));
-                home.getPathJLabel().setText("");
-                home.getPathJLabel().setIcon(folderIcon);
+                //home.getPathJLabel().setText("");
+                //home.getPathJLabel().setIcon(folderIcon);
                 home.getPathJButton().setText("");
-                home.getPathJButton().setIcon(new ImageIcon(getClass().getResource("/img/search-25.png")));
-                home.getPathJButton().setBackground(botton_color);
-                home.getPathJButton().addActionListener(HomeServices.actionPathSearch(home));
+                //home.getPathJButton().setIcon(new ImageIcon(getClass().getResource("/img/search-25.png")));
+                home.getPathJButton().setIcon(new ImageIcon(getClass().getResource("/img/folder-25.png")));
+                //home.getPathJButton().setBackground(botton_color);
+                //home.getPathJButton().addActionListener(HomeServices.actionPathSearch(home));
                 home.getSaveButton().addActionListener(HomeServices.actionSaveButton(home));
                 home.getScriptChosenTable().setModel(new WorkloadTableModel());
                 WorkloadTableService.setActionWorkloadTable(home.getScriptChosenTable(),home);

@@ -26,7 +26,7 @@ import java.util.ArrayList;
 public class CorrelationFrameService {
 
     public static CorrelationFrame openCorrelationFrame (String filename,String harpath,String harfilename,Home home){
-        String path = home.getPathJField().getText();
+        String path = home.getPath();
         CorrelationFrame correlationFrame = null;
         try {
             correlationFrame = new CorrelationFrame();
