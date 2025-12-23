@@ -54,7 +54,7 @@ docker build -t schema-generator-app .
 ### Step 2: (Optionally build and) Run the E2E-Loader Desktop App
 The easiest way to get started is to run the provided JAR file:
 ```bash
-java -jar target/e2eloader-dependency-graph-1.0-SNAPSHOT.jar
+java -jar src/e2eloader-scp-1.0-SNAPSHOT.jar 
 ```
 
 If you want to build E2E-Loader from scratch, you can do so by running the following Maven command, which will generate a new JAR file in the `target` directory:
