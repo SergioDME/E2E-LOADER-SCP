@@ -74,12 +74,32 @@ This test refers to the open-source system [restful-booker-platform](https://git
 
 #### 🧪 Generating Performance Tests E2E-Loader: Step-by-step tutorial
 Once E2E-Loader is launched, the following interface will appear:
-1. **Select input paths**: Provide the path to the directory containing your E2E tests, along with the `hars/` folder containing the corresponding HAR files.
-   In your case: ```<your-path>\example\gui-tests\```
-   ![Select input paths](screens/1.png)
+1. **Select input paths**: Click on the **folder icon** to open the file chooser and select the directory that contains your E2E test cases  
+   (e.g., `<your-path>/example/gui-tests/`).
 
-2. **Inspect available GUI tests**: After clicking the magnifying glass icon, a list of automatically detected GUI tests will appear. Each represents a possible user-behavior to add to your workload. For example, select the test `create_and_delete_room` as shown in the following screen capture.
-   ![Inspect available GUI tests](screens/2.png)
+⚠️ **Important:**  
+The selected directory **must contain a subfolder named `hars/`**, which stores the HAR files corresponding to each E2E test.  
+The tool automatically searches for HAR files inside this folder, so no manual path input is required.
+Example directory structure:
+
+```text
+example/
+└── gui-tests/
+    ├── hars/
+    │   ├── test1.har
+    │   ├── test2.har
+    │   └── ...
+    ├── test1.js
+    ├── test2.js
+    └── ...
+```
+
+
+![Select input paths](screens/1.png)
+![Inspect available GUI tests](screens/2.png)
+
+2. **Inspect available GUI tests**: After selecting the E2E tests folder, a list of automatically detected GUI tests will appear. Each represents a possible user-behavior to add to your workload. For example, select the test `create_and_delete_room` as shown in the following screen capture.
+   ![Inspect available GUI tests](screens/2.5.png)
 
 3. **Load configurations**: A new window opens showing any saved configurations for the selected user-behavior. If none exist, create a new one by clicking the + button in the top-left corner.
    ![](screens/3.png)
@@ -98,19 +118,30 @@ Once E2E-Loader is launched, the following interface will appear:
 
 7. **Example dependency resolution**: Another case shows a query parameter dependency (`roomid=2`) identified with two possible requests (request 5 and request 6). The tester must decide which dependency to keep.
    ![](screens/7.png)
-8. **Save configuration**: Once satisfied with dependencies, provide a name in the bottom field and click **Save**.
+8. **Save configuration**: Once you are satisfied with the dependencies:
+   - Enter a name for the configuration in the bottom field (e.g., `scp-example`).
+   - Click **Save**.
+   - After a short moment, a pop-up will appear confirming that the dependencies have been saved.
+   - Close the current window and return to the previous page to continue.
    ![](screens/8.png)
-9. **Generate workload script**: Return to the previous page where the saved configuration now appears. Select it, then click **Create Script** (top-left) and finally **Add to Workload**.
-   ![](screens/9.png)
+9. **Generate workload script**: Return to the previous page, where the saved configuration now appears in the *Correlation Files* table. 
+- Select the newly created configuration (e.g., `create-and-delete-room-scp-example.json`). 
+- Click **Create Script** (top-left).
+- A pop-up will appear indicating that script generation may take some time. 
+- Once completed, the generated JMeter script will appear in the lower table listing all available scripts. 
+- Select the generated file (e.g., `create-and-delete-room-scp-example.jmx`) and click **Add to Workload** to include this user behavior in the desired workload.
+![](screens/9.png)
+![](screens/10.png)
 10. **Build workload**: Back at the main screen of the tool, you can:
     - Populate the workload table.
     - Add multiple rows of the same user-behavior for realistic workload modeling.
     - Add additional user-behaviors (repeating from step 2).
     - Preview the shape of the workload through the interface.
+    ![](screens/11.a.png)
+    ![](screens/11.b.png)
 11. **Export final workload**: Once satisfied, enter a name and click Save.
-    ![](screens/11a.png)
     This generates the final JMeter script, which is ready to use and can be opened also within JMeter, as shown in the following screen capture.
-    ![](screens/11b.png)
+    ![](screens/12.png)
 
 
 #### 👽 Advanced Example

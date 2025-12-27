@@ -158,6 +158,9 @@ public class CorrelationFrameService {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
 
+                JOptionPane.showMessageDialog(null, "Script creation in progress...\n May take some time...",
+                        "Script creation",
+                        JOptionPane.WARNING_MESSAGE);
                 String correlation_selected= "";
                 int cnt=0;
                 for(int i=0;i<correlationFrame.getCorrelationsTable().getRowCount();i++) {
@@ -177,6 +180,7 @@ public class CorrelationFrameService {
                         System.out.println(e.toString());
                     }
                     try {
+
                         DependencyGraph dependencyGraph = DependencyGraph.parseGraphByFile(new File(Paths.dep_saved_path+"/"+correlation_selected));
                         //String nameCorr = CorrelationNameSelected.split("-")[1].split("\\.")[0];
                         JMeterAdaption.runJMeterAdaption(dependencyGraph,Paths.scripts_saved_path+"/"+filename+".jmx",correlation_selected);
