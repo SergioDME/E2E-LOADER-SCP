@@ -67,15 +67,15 @@ mvn clean package
 
 To quickly explore E2E Loader's features, we provide a ready-to-use test and its corresponding HAR file in the `/example` folder. No need to generate HAR files from scratch!
 
-- **Test** :```\example\gui-tests\create_and_delete_room.cy```
-- **HAR file**: ```\example\gui-test\hars\create_and_delete_room.har```
+- **Test** :```\example\gui tests\create_and_delete_room.cy```
+- **HAR file**: ```\example\gui tests\hars\create_and_delete_room.har```
 
 This test refers to the open-source system [restful-booker-platform](https://github.com/mwinteringham/restful-booker-platform), a Bed and Breakfast booking platform. The test automates creating a room and then deleting it.
 
 #### 🧪 Generating Performance Tests E2E-Loader: Step-by-step tutorial
 Once E2E-Loader is launched, the following interface will appear:
 1. **Select input paths**: Click on the **folder icon** to open the file chooser and select the directory that contains your E2E test cases  
-   (e.g., `<your-path>/example/gui-tests/`).
+   (e.g., `<your-path>/example/gui tests/`).
 
 ⚠️ **Important:**  
 The selected directory **must contain a subfolder named `hars/`**, which stores the HAR files corresponding to each E2E test.  
@@ -84,7 +84,7 @@ Example directory structure:
 
 ```text
 example/
-└── gui-tests/
+└── gui tests/
     ├── hars/
     │   ├── test1.har
     │   ├── test2.har
